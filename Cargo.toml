@@ -1,0 +1,29 @@
+[package]
+name = "boost_variant"
+description = "Boost C++ library boost_variant packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_variant"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_variant"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container_hash = { version = "0.1.0", path = "../boost_container_hash" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_detail = { version = "0.1.0", path = "../boost_detail" }
+boost_integer = { version = "0.1.0", path = "../boost_integer" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_index = { version = "0.1.0", path = "../boost_type_index" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
